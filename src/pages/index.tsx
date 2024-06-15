@@ -1,11 +1,14 @@
 import type { HeadFC, PageProps } from 'gatsby';
 import React, { FC } from 'react';
-import { Hello } from '../components';
+import {
+  Hello,
+  SEO,
+} from '../components';
 
 export const IndexPage: FC<PageProps> = () => (
-  <Hello label="Start page" />
+  <Hello label="Hemo" />
 );
 
 export default IndexPage;
 
-export const Head: HeadFC = () => <title>Home Page</title>;
+export const Head: HeadFC = () => <SEO title="Homepage" description="Homepage description" />;

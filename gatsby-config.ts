@@ -3,33 +3,13 @@ import type { GatsbyConfig } from 'gatsby';
 const config: GatsbyConfig = {
   siteMetadata: {
     title: 'tofu-gatsby-boilerplate',
+    description: 'Example project for the Gatsby Head API',
     siteUrl: 'https://www.yourdomain.tld',
   },
   graphqlTypegen: true,
   plugins: [
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        icon: './src/assets/tofu.png',
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-favicons',
-      options: {
-        logo: './src/assets/tofu.png',
-        appName: 'TofuApp',
-        background: '#fff',
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: false,
-          favicons: true,
-          yandex: false,
-          windows: false,
-        },
-      },
-    },
+    'gatsby-plugin-robots-txt',
+    'gatsby-plugin-sitemap',
   ],
 };
 
