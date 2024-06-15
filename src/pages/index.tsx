@@ -11,4 +11,9 @@ export const IndexPage: FC<PageProps> = () => (
 
 export default IndexPage;
 
-export const Head: HeadFC = () => <SEO title="Homepage" description="Homepage description" />;
+export const Head: HeadFC = () => (
+  <>
+    <html lang="en" />
+    <SEO title="Homepage" description="Homepage description" />
+  </>
+);
