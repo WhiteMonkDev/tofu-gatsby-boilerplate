@@ -10,6 +10,10 @@ const config: GatsbyConfig = {
   plugins: [
     'gatsby-plugin-robots-txt',
     'gatsby-plugin-sitemap',
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-styled-components',
   ],
 };
 
