@@ -26,7 +26,7 @@ export const Head: HeadFC = () => (
 
 const GlobalStyles = createGlobalStyle`
     html,body{
-ya      margin: 0;
+      margin: 0;
       padding: 0;
       background: lightgoldenrodyellow;
     }

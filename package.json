@@ -60,7 +60,6 @@
     "styled-components": "^6.1.11"
   },
   "devDependencies": {
-    "styled-components": "^6.1.11",
     "@types/jest": "^29.5.12",
     "@types/node": "^20.11.5",
     "@types/react": "^18.2.48",
@@ -70,6 +69,7 @@
     "eslint-plugin-jest-dom": "^5.1.0",
     "husky": "^8.0.0",
     "lint-staged": "^15.2.2",
+    "styled-components": "^6.1.11",
     "ts-jest": "^29.1.2",
     "typescript": "^5.3.3"
   }
