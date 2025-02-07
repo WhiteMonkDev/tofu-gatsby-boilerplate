@@ -2,7 +2,7 @@
   "name": "tofu-gatsby-boilerplate",
   "version": "1.0.0",
   "description": "tofu-gatsby-boilerplate",
-  "author": "Kacper Drewniak | WhiteMonk",
+  "author": "Kacper  Drewniak | WhiteMonk",
   "keywords": [
     "gatsby"
   ],
@@ -14,6 +14,7 @@
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
     "lint": "eslint --ext .ts,.tsx --cache src/",
+    "prettier": "npx prettier . --check",
     "lint:fix": "eslint --ext .ts,.tsx --fix src/",
     "prepare:husky": "husky install",
     "postinstall": "npm run prepare:husky",
@@ -69,8 +70,10 @@
     "eslint-plugin-jest-dom": "^5.1.0",
     "husky": "^8.0.0",
     "lint-staged": "^15.2.2",
+    "prettier": "3.4.2",
     "styled-components": "^6.1.11",
     "ts-jest": "^29.1.2",
     "typescript": "^5.3.3"
-  }
+  },
+  "packageManager": "yarn@3.6.4+sha512.e70835d4d6d62c07be76b3c1529cb640c7443f0fe434ef4b6478a5a399218cbaf1511b396b3c56eb03bc86424cff2320f6167ad2fde273aa0df6e60b7754029f"
 }

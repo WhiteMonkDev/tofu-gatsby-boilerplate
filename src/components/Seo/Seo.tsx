@@ -1,6 +1,6 @@
 import React from 'react';
 
-type SEOProps ={
+type SEOProps = {
     title?:string;
     description?:string;
     children?:string
