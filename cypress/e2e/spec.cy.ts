@@ -1,5 +1,7 @@
+const url = '/';
+
 describe('template spec', () => {
   it('passes', () => {
-    cy.visit('/')
-  })
-})
+    cy.visit(url).waitForRouteChange();
+  });
+});

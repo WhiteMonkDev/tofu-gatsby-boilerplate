@@ -4,5 +4,6 @@
 echo "Checking eslint..."
 
 yarn lint
+yarn prettier
 
 

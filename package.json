@@ -20,23 +20,25 @@
     "postinstall": "npm run prepare:husky",
     "prepare": "husky install",
     "test": "jest",
-    "check": "jest && lint",
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run",
-    "test:e2e:ci": "start-server-and-test dev http://localhost:8000 cypress:run"
+    "check": "jest && lint && prettier",
+    "test:e2e": "CYPRESS_SUPPORT=y start-server-and-test develop http://localhost:8000 cy:open",
+    "cypress:run": "cypress run"
   },
   "dependencies": {
     "@babel/preset-typescript": "^7.23.3",
+    "@testing-library/cypress": "^10.0.3",
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.2.1",
     "babel-jest": "^29.7.0",
     "babel-plugin-styled-components": "^2.1.4",
     "babel-preset-gatsby": "^3.13.1",
     "cypress": "^13.8.1",
+    "cypress-axe": "^1.6.0",
     "eslint-config-airbnb-typescript": "^17.1.0",
     "eslint-plugin-graphql": "^4.0.0",
     "eslint-plugin-simple-import-sort": "^12.0.0",
     "gatsby": "^5.13.2",
+    "gatsby-cypress": "^3.14.0",
     "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-favicons": "^2.0.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
@@ -75,5 +77,4 @@
     "ts-jest": "^29.1.2",
     "typescript": "^5.3.3"
   },
-  "packageManager": "yarn@3.6.4+sha512.e70835d4d6d62c07be76b3c1529cb640c7443f0fe434ef4b6478a5a399218cbaf1511b396b3c56eb03bc86424cff2320f6167ad2fde273aa0df6e60b7754029f"
 }

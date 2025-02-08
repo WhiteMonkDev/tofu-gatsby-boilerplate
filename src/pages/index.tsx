@@ -10,7 +10,7 @@ import {
 export const IndexPage: FC<PageProps> = () => (
   <Container>
     <GlobalStyles />
-    <Hello label="Hemo" />
+    <Hello label="Tofu" />
     <StaticImage style={{ margin: 16, maxHeight: 100 }} objectFit="contain" src="../assets/tofu.png" alt="A dinosaur" />
   </Container>
 );
